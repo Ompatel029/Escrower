@@ -5,7 +5,7 @@ import Introduce from '../components/Introduce';
 import Features from '../components/Features';
 import Portfolio from '../components/Portfolio';
 import FAQ from '../components/FAQ';
-import Blog from '../components/BLOG';
+import Blog from '../components/Blog';
 import Newsletter from '../components/Newlatter';
 import Imagescroller from '../components/Imagescroller';
 
