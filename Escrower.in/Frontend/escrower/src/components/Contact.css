@@ -1,0 +1,289 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== FIRST SECTION - 3D Character ===== */
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contact-inner {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Image Box */
+.img-box {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  background: #111;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side Details */
+.details-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+
+/* Contact Cards */
+.contact-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Phone Box - Less rounded (Square-ish) */
+.contact-card.first-box {
+  border-radius: 12px;
+  padding: 28px 40px;
+  max-width: 320px;
+}
+
+/* Email Box - Medium rounded */
+.contact-card:not(.first-box):not(.address-box):not(.form-input-card):not(.form-textarea-card):not(.submit-card) {
+  border-radius: 50px;
+  padding: 24px 40px;
+}
+
+/* Address Box - More rounded */
+.contact-card.address-box {
+  border-radius: 30px;
+  padding: 28px 40px;
+  max-width: 380px;
+}
+
+/* Hover effect only on box */
+.contact-card:hover {
+  border-color: #555;
+  transform: scale(1.02);
+}
+
+/* Text Styling */
+.contact-text {
+  color: #a3ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Arrows */
+.arrow {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.arrow-svg {
+  width: 40px;
+  height: 70px;
+}
+
+/* ===== SECOND SECTION - Form Page ===== */
+.form-page {
+  background: #0a0a0a;
+}
+
+.form-box {
+  background: #1e1e1e;
+  border: 1px solid #a3ff00;
+  border-radius: 24px;
+  padding: 50px 60px;
+  max-width: 1000px;
+  gap: 50px;
+  align-items: start;
+}
+
+/* Map Section */
+.map-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: transparent;
+  border: none;
+  height: auto;
+}
+
+.contact-heading {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0f172a;
+  border: 1px solid #2a2a2a;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Section */
+.form-section {
+  gap: 20px;
+}
+
+/* Form Inputs - Pill shape */
+.form-input-card {
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 50px;
+  padding: 4px 24px;
+  max-width: 100%;
+  transition: border-color 0.3s;
+}
+
+.form-input-card:hover {
+  border-color: #444;
+  transform: none;
+}
+
+.contact-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 16px 0;
+  outline: none;
+  font-family: inherit;
+}
+
+.contact-input::placeholder {
+  color: #666666;
+}
+
+/* Textarea - Rounded rectangle */
+.form-textarea-card {
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 28px;
+  padding: 20px 24px;
+  max-width: 100%;
+  min-height: 140px;
+  transition: border-color 0.3s;
+}
+
+.form-textarea-card:hover {
+  border-color: #444;
+  transform: none;
+}
+
+.contact-textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.contact-textarea::placeholder {
+  color: #666666;
+}
+
+/* Submit Button */
+.submit-card {
+  background: transparent;
+  border: none;
+  padding: 10px 0 0 0;
+  max-width: fit-content;
+}
+
+.submit-card:hover {
+  transform: none;
+  border-color: transparent;
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #06b6d4 0%, #a3ff00 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 18px 36px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.gradient-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(163, 255, 0, 0.3);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .img-box {
+    height: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-heading {
+    font-size: 32px;
+  }
+  
+  .map-container {
+    height: 250px;
+  }
+  
+  .form-box {
+    padding: 30px;
+  }
+}
