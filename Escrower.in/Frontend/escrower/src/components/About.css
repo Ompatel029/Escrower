@@ -1,0 +1,122 @@
+/* ---------- ABOUT SECTION ---------- */
+.about-section {
+  background: #0c0f14;
+  color: #fff;
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-welcome {
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about-desc {
+  color: #bdbdbd;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.about-images {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 25px;
+}
+
+.img-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ---------- STRENGTH SECTION ---------- */
+.strength-section {
+  background: #0b0f14;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.strength-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.strength-tag {
+  color: #9cff57;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.strength-left h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.strength-left p {
+  color: #c5c5c5;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+/* Progress bars */
+.bar-item {
+  margin-bottom: 35px;
+}
+
+.bar-item span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.progress {
+  width: 100%;
+  height: 6px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #44ffa1, #baff00);
+  border-radius: 10px;
+}
+
+.bar-item p {
+  text-align: right;
+  margin-top: 6px;
+  color: #aaa;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-images {
+    grid-template-columns: 1fr;
+  }
+
+  .strength-container {
+    grid-template-columns: 1fr;
+  }
+}

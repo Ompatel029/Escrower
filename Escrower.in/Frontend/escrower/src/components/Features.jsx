@@ -104,6 +104,7 @@ const Features = () => {
       </div>
       <MovingText />
     </section>
+    
   );
 };
 
